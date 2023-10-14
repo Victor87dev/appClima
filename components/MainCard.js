@@ -15,13 +15,30 @@ const MainCard = (props) => {
           width: 110,
           height: 210,
         },
+        refreshButton:{
+            position: 'absolute',
+            margin: 30,
+            alignSelf: 'flex-start',
+      
+        },
+        text:{
+            color: 'white',
+            margin: 15,
+            fontSize: 20,
+        },
+        cardIcon:{
+            color: 'white',
+            margin: 15,
+        },
+
+
       });
     
     return(
         <View style={styles.card}>
-          <Text style={styles.cardTitle}>Manhã</Text>
-          <Feather name="sun" style={{marginTop: 55}} size={40} color="orange" />
-          <Text style={styles.temperatureText}>21°C</Text>
+          <Text style={styles.text}>Manhã</Text>
+          <Feather name="sun" style={styles.cardIcon} size={40} color="orange" />
+          <Text style={styles.text}>21°</Text>
         </View>
     )
 }
